@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <TextView
+        android:text="Book Title"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/textView1" />
+    <EditText
+        android:inputType="text"
+        android:hint="Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleinput" />
+    <TextView
+        android:text="Author Name"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/textView2" />
+    <EditText
+        android:inputType="text"
+        android:hint="Author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/authorinput" />
+    <TextView
+        android:text="Pages"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/textView3" />
+    <EditText
+        android:inputType="numberDecimal"
+        android:hint="# Pages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pagesinput" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text=""
+            android:textColor="#f00"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/infotext" />
+        <Button
+            android:text="Add New Book Entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/addbookbutton" />
+    
+
+
+    </RelativeLayout>
+
+</LinearLayout>

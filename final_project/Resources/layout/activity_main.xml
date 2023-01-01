@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:text="Sign in to your account"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_columnSpan="2"
+        android:paddingHorizontal="20dp">
+        <TextView
+            android:text="Username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview1"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="username"
+            android:layout_weight="1"
+            android:id="@+id/usernameinput"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_columnSpan="2"
+        android:paddingHorizontal="20dp">
+        <TextView
+            android:text="Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview3"/>
+        <EditText
+            android:layout_gravity="fill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:password="true"
+            android:layout_weight="1"
+            android:id="@+id/passwordinput"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:text="Sign In"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="50dp"
+            android:id="@+id/signinbutton" />
+        <TextView
+            android:text=""
+            android:textColor="#f00"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/signinbutton"
+            android:id="@+id/infotext" />
+        <TextView
+            android:text="dont have an account?"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_above="@+id/createaccountbutton"
+            android:id="@+id/textView2" />
+        <Button
+            android:text="Create an Account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/createaccountbutton" />
+    
+
+    </RelativeLayout>
+
+</LinearLayout>

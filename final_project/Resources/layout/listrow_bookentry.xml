@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:padding="4dp"
+    android:paddingBottom="4dp"
+    android:id="@+id/relativeLayout1">
+    <TextView
+        android:id="@+id/titletext"
+        android:text="Title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/authortext"
+        android:id="@+id/progressbar"
+        android:max="100"
+        android:progress="50" />
+    <Button
+        android:text="Update"
+        android:backgroundTint="#5a5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@id/deletebutton"
+        android:id="@+id/editbutton" />
+    <Button
+        android:text="Delete"
+        android:backgroundTint="#f55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/deletebutton" />
+    <TextView
+        android:id="@+id/authortext"
+        android:layout_below="@id/titletext"
+        android:text="Author"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp" />
+
+</RelativeLayout>
